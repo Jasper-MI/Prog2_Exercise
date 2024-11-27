@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lab02" />
+        <module name="lab01" />
+        <module name="lession04" />
+        <module name="lession03" />
+        <module name="lession02" />
+        <module name="lession01" />
+        <module name="lession08" />
+        <module name="lession07" />
+        <module name="lab04" />
+        <module name="lession06" />
+        <module name="lab03" />
+        <module name="lession05" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

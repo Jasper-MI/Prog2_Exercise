@@ -8,6 +8,8 @@ import java.util.List;
  */
 public class Lab1Main {
 
+
+
   public static void main(String[] args) {
     // Daten fuer Studierenden als Strings
     List<String> data = new ArrayList<String>();
@@ -37,6 +39,7 @@ public class Lab1Main {
     data.add("Xena Xylophon,70024,Screen Based Media,312");
     data.add("Yannik Yoga,70025,Druck- und Medientechnik,312");
     data.add("Zoe Zoo,70026,Technische Informatik,312");
+    data.add("Zoe Zoo,70026,Technische Informatik,312,mehr Info,noch mehr Info");
 
     // Create a list of Student-Objects
     List<Student> students = new ArrayList<Student>();
@@ -44,8 +47,12 @@ public class Lab1Main {
     // Parse each line ...
     for (String datenZeile : data) {
       // ... and try to create a Student object
-      Student student = new Student(datenZeile);
-      students.add(student);
+      try {
+        Student student = new Student(datenZeile);
+        students.add(student);
+      } catch (Exception e) {
+        continue;
+      }
     }
 
     // Print all students which could be parsed
