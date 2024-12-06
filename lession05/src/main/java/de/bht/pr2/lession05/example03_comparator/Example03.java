@@ -20,6 +20,8 @@ public class Example03 {
 
         SchiffComparator schiffComparator = new SchiffComparator();
         listeVonSchiffen.sort(schiffComparator);
+        // auch gehen würde hier:
+        // listeVonSchiffen.sort(new SchiffComparator());
 
         System.out.println("----- Nach Collections.sort -----");
         System.out.println(listeVonSchiffen);
